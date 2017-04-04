@@ -1,13 +1,21 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 	<head>
 		<meta charset="utf-8">
+
+		<title>GNU/Linux Básico</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
-
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -20,31 +28,369 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
 	</head>
+
 	<body>
+
 		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>GNU/Linux básico</h1>
+					<p>
+						<h3>Por Gomex</a></h3>
+					</p>
+				</section>
+
+				<section>
+					<h2>Agenda</h2>
+					<ul>
+						<li>Conceitos básicos</li>
+						<li>Breve história e Filosofias</li>
+						<li>Conceitos de sistema operacional</li>
+						<li>O que GNU/Linux</li>
+						<li>Ambientes de interação (Terminal e Interface gráfica)</li>
+						<li>Comandos Básicos no terminal</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Agenda</h2>
+					<ul>
+						<li>Instalando softwares no GNU/Linux (No terminal e interface gráfica)</li>
+						<li>Comprimindo e descomprimindo arquivos</li>
+						<li>Tratamento de problemas comuns</li>
+						<li>Onde procurar por soluções/ajuda para meus problemas?</li>
+						<li>Distribuições GNU/Linux</li>
+						<li>Instalando GNU/Linux passo a passo</li>
+					</ul>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+					<section>
+						<h2>Conceitos básicos</h2>
+						<h3>Código e Software</h3>
+
+						<img data-src=./img/softwarecodigo.jpg>
+
+					</section>
+					<section>
+						<h2>Conceitos básicos</h2>
+						<h3>Código compilado</h3>
+
+						<img data-src=./img/compilador.png>
+
+						<p>Obs: Não é facilmente reversível</p>
+
+					</section>
+
+					<section>
+						<h2>Breve história e filosofia</h2>
+
+						<img data-src=./img/stallman.jpeg>
+
+						<ul>
+							<li>Criou o GNU em 1984</li>
+							<li>GNU is not UNIX</li>
+							<li>Foco na ideologia</li>
+							<li>1989 cria a GPL (General Public License)</li>
+							<li>1998 cria a Free Software Fondation</li>
+						</ul>
+
+					</section>
+					<section>
+						<h2>Breve história e filosofia</h2>
+						<h3>As 4 liberdades</h3>
+
+						<img data-src=./img/gnu.jpg>
+
+					</section>
+					<section>
+						<h2>Liberdade 0</h2>
+						<p>A liberdade de executar o programa, para qualquer propósito</p>
+					</section>
+					<section>
+						<h2>Liberdade 1</h2>
+						<p>A liberdade de estudar como o programa funciona e adaptá-lo para as suas necessidades</p>
+					</section>
+					<section>
+						<h2>Liberdade 2</h2>
+						<p>A liberdade de redistribuir cópias de modo que você possa ajudar ao seu próximo</p>
+					</section>
+					<section>
+						<h2>Liberdade 3</h2>
+						<p>A liberdade de aperfeiçoar o programa, e liberar os seus aperfeiçoamentos, de modo que toda a comunidade se beneficie deles. O acesso ao código-fonte é um pré-requisito para esta liberdade.</p>
+					</section>
+					<section>
+						<h2>Breve história e filosofia</h2>
+
+						<img width="238" height="238" data-src=./img/opensourcelogo.gif>
+
+						<ul>
+							<li>Criado em 1998</li>
+							<li>Criado por racha no GNU</li>
+							<li>Foco no software não na ideologia</li>
+							<li>Inimigos declarados do GNU resolveram apoiar</li>
+							<li>Pode conter partes não livres no código</li>
+						</ul>
+
+					</section>
+					<section>
+						<h2>Conceitos de sistema operacional</h2>
+
+						<img data-src=./img/so.jpg>
+
+					</section>
+
+				<section>
+					<h2>O que Linux</h2>
+					<img width="200" height="238" data-src=./img/tux.png>
+					<ul>
+						<li>Criado por Linus Torvalds</li>
+						<li>Linux é apenas a parte mais central</li>
+						<li>Enviado para uma lista em 1991</li>
+						<li>Linux é Software Livre</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>O que GNU/Linux</h2>
+						<img data-src=./img/gnulinux.png>
+				</section>
+
+				<section>
+					<h2>Ambientes de interação</h2>
+					<ul>
+						<li>Terminal</li>
+						<li>Interface Gráfica</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Ambientes de interação</h2>
+					<h3>Terminal</h3>
+					<img data-src=./img/terminal.png>
+				</section>
+				<section>
+					<h2>Ambientes de interação</h2>
+					<h3>Interface Gráfica</h3>
+					<img data-src=./img/interfacegrafica.jpg>
+				</section>
+				<section>
+					<h2>Organização de arquivos no GNU/Linux</h2>
+					<img data-src=./img/arquivos.png>
+				</section>
+				<section>
+					<h2>Comandos Básicos no terminal</h2>
+					<h3>Listando arquivos e pastas</h3>
+					<code class="hljs">
+						ls
+					</code>
+					<img data-src=./img/ls.png>
+				</section>
+				<section>
+					<h2>Comandos Básicos no terminal</h2>
+					<h3>Acessando pastas</h3>
+					<code class="hljs">
+						cd nome_da_pasta
+					</code>
+					<img data-src=./img/cd.png>
+				</section>
+				<section>
+					<h2>Comandos Básicos no terminal</h2>
+					<h3>Copiando pastas ou arquivos</h3>
+					<code class="hljs">
+						cp -r nome_da_pasta pasta_destino
+					</code>
+					<img data-src=./img/cp.png>
+				</section>
+				<section>
+					<h2>Comandos Básicos no terminal</h2>
+					<h3>Movendo pastas ou arquivos</h3>
+					<code class="hljs">
+						mv nome_da_pasta pasta_destino
+					</code>
+					<img data-src=./img/mv.png>
+				</section>
+				<section>
+					<h2>Comandos Básicos no terminal</h2>
+					<h3>Apagando pastas ou arquivos</h3>
+					<code class="hljs">
+						rm -r nome_da_pasta pasta_destino
+					</code>
+					<img data-src=./img/rm.png>
+				</section>
+
+				<section>
+					<h2>Instalando programas</h2>
+					<h3>No terminal</h3>
+					<code class="hljs">
+						apt-get update
+					</code>
+					<code class="hljs">
+						apt-get install nome_do_programa
+					</code>
+					<img data-src=./img/installpack.png>
+				</section>
+
+				<section>
+					<h2>Instalando programas</h2>
+					<h3>Na interface gráfica</h3>
+					<img width="600" data-src=./img/installpackgraf.png>
+				</section>
+				<section>
+					<h2>Compressão de arquivos</h2>
+					<img data-src=./img/compressing.jpeg>
+				</section>
+
+				<section>
+					<h2>Compressão de arquivos</h2>
+					<h3>Como comprimir</h3>
+					<img height="400" data-src=./img/comprimir.png>
+				</section>
+
+				<section>
+					<h2>Compressão de arquivos</h2>
+					<h3>Como comprimir</h3>
+					<img  data-src=./img/comprimir2.png>
+				</section>
+
+				<section>
+					<h2>Compressão de arquivos</h2>
+					<h3>Como descomprimir</h3>
+					<img height="400" data-src=./img/descomprimir.png>
+				</section>
+
+				<section>
+					<h2>Onde procurar soluções</h2>
+					<h3>www.google.com</h3>
+					<img data-src=./img/google.png>
+				</section>
+
+				<section>
+					<h2>Onde procurar soluções</h2>
+					<h3>www.vivaolinux.com.br</h3>
+					<img data-src=./img/vivaolinux.png>
+				</section>
+
+				<section>
+					<h2>Distribuições GNU/Linux</h2>
+					<img data-src=./img/ditribuicoeslinux.jpg>
+				</section>
+
+				<section>
+					<h2>Instalando seu GNU/Linux</h2>
+					<img data-src=./img/install01.png>
+				</section>
+
+				<section>
+					<h2>Instalando seu GNU/Linux</h2>
+					<h3>Escolhendo Idioma</h3>
+					<img data-src=./img/install14.png>
+				</section>
+
+				<section>
+					<h2>Instalando seu GNU/Linux</h2>
+					<h3>Escolhendo Idioma</h3>
+					<img data-src=./img/install15.png>
+				</section>
+
+				<section>
+					<h2>Instalando seu GNU/Linux</h2>
+					<h3>Tipo de instalação</h3>
+					<img data-src=./img/install04.png>
+				</section>
+
+				<section>
+					<h2>Instalando seu GNU/Linux</h2>
+					<h3>Confirme a instalação</h3>
+					<img data-src=./img/install05.png>
+				</section>
+
+				<section>
+					<h2>Instalando seu GNU/Linux</h2>
+					<h3>Configurando fuso horário</h3>
+					<img data-src=./img/install06.png>
+				</section>
+
+				<section>
+					<h2>Instalando seu GNU/Linux</h2>
+					<h3>Configurando teclado</h3>
+					<img data-src=./img/install07.png>
+				</section>
+
+				<section>
+					<h2>Instalando seu GNU/Linux</h2>
+					<h3>Configurando usuário</h3>
+					<img data-src=./img/install08.png>
+				</section>
+
+				<section>
+					<h2>Instalando seu GNU/Linux</h2>
+					<h3>Aguarde instalação</h3>
+					<img data-src=./img/install09.png>
+				</section>
+
+				<section>
+					<h2>Instalando seu GNU/Linux</h2>
+					<h3>Reiniciar após instalação</h3>
+					<img data-src=./img/install10.png>
+				</section>
+
+				<section>
+					<h2>Instalando seu GNU/Linux</h2>
+					<h3>Acessando pela primeira vez</h3>
+					<img data-src=./img/install11.png>
+				</section>
+
+				<section>
+					<h2>Instalando seu GNU/Linux</h2>
+					<h3>Tela de trabalho</h3>
+					<img data-src=./img/install13.png>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>Contato</h1>
+					<p>
+						- gomex@riseup.net <br>
+						- <a href="https://github.com/gomex/gnulinux101">Código fonte dessa apresentação</a>
+					</p>
+				</section>
+
 			</div>
+
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
 		<script>
+
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
+				controls: true,
+				progress: true,
 				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
+
 		</script>
+
 	</body>
 </html>
